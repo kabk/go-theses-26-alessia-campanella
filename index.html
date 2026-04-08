@@ -2,17 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <title>The Archive</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section id="splash" class="full-screen">
       <div class="splash-inner">
         <h1 class="site-title">THE ARCHIVE</h1>
-        <button id="enter-archive" class="primary-button" type="button">
-          Enter
-        </button>
+        <form
+          id="fake-login"
+          class="login-form"
+          action="chapter-1.html"
+          autocomplete="off"
+        >
+          <label class="login-label" for="archive-pass">Password</label>
+          <input
+            id="archive-pass"
+            class="login-input"
+            type="password"
+            inputmode="text"
+            autocapitalize="off"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="••••••••"
+          />
+          <button class="primary-button" type="submit">Enter</button>
+        </form>
       </div>
     </section>
 
